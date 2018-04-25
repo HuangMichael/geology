@@ -1,0 +1,79 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2017/5/20 0020
+  Time: 15:53
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+    <%@include file="../common/common-header.jsp" %>
+</head>
+<body class="dashboard">
+<%@include file="../common/common-title.jsp" %>
+<%@include file="../common/common-topMenu.jsp" %>
+
+<div class="content">
+    <img style="position:absolute;left:0px;top:0px;width:100%;height:100%;z-Index:-1;" src="img/title-bg.jpg"/>
+    <div class="container-fluid">
+        <div class="divider-vertical" style="height: 20px;"></div>
+        <div class="row-fluid">
+            <!-- ==================== END OF WIDGETS CONTAINER ==================== -->
+            <div class="mySpan10">
+                <!-- ==================== TABLE HEADLINE ==================== -->
+                <div class="containerHeadline tableHeadline">
+                    <i class="icon-table"></i>
+                    <h2>系统管理-系统监控管理-应用访问日志</h2>
+                </div>
+                <div class="floatingBox table">
+                    <div class="container-fluid">
+                        <form class="form-inline pull-left">
+                            <div class="form-group" id="searchBox">
+                                <input type="text" class="form-control" id="userName" placeholder="用户名称">
+                                <%@include file="../common/common-buttonCrudGroup.jsp" %>
+                            </div>
+                        </form>
+                        <div id="table">
+                            <table id="dataTableList" class="table table-hover table-bordered" style="margin-top:10px">
+                                <thead>
+                                <tr>
+                                    <th data-column-id="id" data-width="5%" data-type="numeric" data-identifier="true">
+                                        序号
+                                    </th>
+                                    <th data-column-id="accessTime" data-width="15%" data-converter="datetime">访问时间</th>
+                                    <th data-column-id="appName" data-width="20%">应用名称</th>
+                                    <th data-column-id="ip" data-width="20%">用户ip</th>
+                                    <th data-column-id="url" data-width="20%">访问路径</th>
+                                    <th data-column-id="userName" data-width="20%">访问用户</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!-- ==================== END OF HOVER TABLE FLOATING BOX ==================== -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- ==================== END OF WIDGETS CONTAINER ==================== -->
+        </div>
+    </div>
+</div>
+<!-- ==================== END OF PAGE CONTENT ==================== -->
+<%@include file="../common/common-footer.jsp" %>
+<script type="text/javascript" src="/js/select2-4.0.3/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="/js/app/appAccessLog.js"></script>
+
+</body>
+
+</html>

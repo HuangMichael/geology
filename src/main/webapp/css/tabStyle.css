@@ -1,0 +1,36 @@
+ h4 {
+ 	border-top: solid black 0.5px;
+ 	border-left: solid black 0.5px;
+ 	border-right: solid black 0.5px;
+ 	width: 100px;
+ 	height: 30px;
+ 	margin: 0;
+ 	float: left;
+ 	text-align: center;
+ 	
+ }
+ h4.modal-title{
+	 border: none;
+	 float: none;
+	 /*width: 100%;*/
+	 text-align: left;
+	 display: inline-block;
+ }
+ 
+ .tab-content {
+ 	border: solid darkgray 1px; 
+ 	height: auto;
+ }
+ 
+ .tab-content div {
+ 	display: none;
+ }
+ 
+ .selected {
+ 	background-color: skyblue;
+ }
+ 
+ .tab-content .show {
+ 	display: block;
+ 	
+ }

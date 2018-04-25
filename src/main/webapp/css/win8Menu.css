@@ -1,0 +1,277 @@
+#about {
+	color: #999;
+	text-align: center;
+	font: 0.9em Arial, Helvetica;
+}
+
+#about a {
+	color: #777;
+}
+
+.menu {
+	width: 80%;
+	/*width: 920px;*/
+	margin: 30px auto;
+	padding: 15px;
+	list-style: none;
+	counter-reset: li;
+	/*background: #eee;*/
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.menu:before,
+.menu:after {
+	content: "";
+	display: table;
+}
+
+.menu:after {
+	clear: both;
+}
+
+.menu {
+	zoom: 1;
+}
+
+
+/* -------------------------------- */
+
+.menu li {
+	position: relative;
+	float: left;
+	cursor: pointer;
+	height: 200px;
+	width: 30%;
+	margin: 5% 0 0 5%;
+	color: #fff;
+	/*border-radius: 20px;*/
+	box-shadow: 10px 10px 5px darkgray;
+}
+
+.menu li:hover,
+.menu li:focus {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .2)), to(rgba(255, 255, 255, 0)));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+	background-image: linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+}
+
+.menu .cover {
+	z-index: 2;
+}
+
+.menu .cover:focus {
+	outline: 0;
+}
+
+
+/* -------------------------------- */
+
+.menu li::after {
+	content: counter(li);
+	counter-increment: li;
+	font: italic bold 10px serif, georgia;
+	position: absolute;
+	color: rgba(255, 255, 255, .1);
+	opacity: 0;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+.menu li:hover::after,
+.menu li:focus::after {
+	font-size: 100px;
+	opacity: 1;
+}
+
+.menu .cover::after {
+	z-index: -1;
+}
+
+
+/* -------------------------------- */
+
+.menu li:nth-child(1),
+.menu li:nth-child(2),
+.menu li:nth-child(3) {
+	margin-top: 0;
+}
+
+.menu li:nth-child(1),
+.menu li:nth-child(4),
+.menu li:nth-child(7) {
+	margin-left: 0;
+}
+
+
+/* -------------------------------- */
+
+.menu li:nth-child(1),
+.menu li:nth-child(1) .content,
+.menu li:nth-child(1) .close {
+	background-color: red;
+	/*background-image: url(../img/button/weidi.png);*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+}
+
+.menu li:nth-child(1) .content,
+{
+	opacity: 0.7;
+}
+
+.menu li:nth-child(2),
+.menu li:nth-child(2) .content,
+.menu li:nth-child(2) .close {
+	/*background-image: url(../img/button/gongchang.png);*/
+	background-color: orange;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*background-size: 300px 220px;*/
+}
+
+.menu li:nth-child(3),
+.menu li:nth-child(3) .content,
+.menu li:nth-child(3) .close {
+	/*background-image: url(../img/button/guihua.png);*/
+	background-color: green;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.menu li:nth-child(4),
+.menu li:nth-child(4) .content,
+.menu li:nth-child(4) .close {
+	/*background-image: url(../img/button/hd.png);*/
+	background-color: deepskyblue;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.menu li:nth-child(5),
+.menu li:nth-child(5) .content,
+.menu li:nth-child(5) .close {
+	/*background-image: url(../img/button/tongji.png);*/
+	background-color: purple;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.menu li:nth-child(6),
+.menu li:nth-child(6) .content,
+.menu li:nth-child(6) .close {
+	/*background-image: url(../img/button/sysManage.png);*/
+	background-color: darkslategray;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+/* -------------------------------- */
+
+.menu .content {
+	opacity: 0;
+	display: none\6;
+	overflow: hidden;
+	font: 12px Arial, Helvetica;
+	position: absolute;
+	height: 160px;
+	width: 30%;
+	/* Ideally: height: 100%; width: 100%; but works at it should just in FF */
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	border-radius: 5px;
+}
+
+.menu .expanded {
+	opacity: .95;
+	display: block\6;
+	overflow: visible;
+	/*padding: 10px;*/
+	height: 200px;
+	width: 100%;
+	/*border-radius: 20px;*/
+	/* Cover the entire area */
+}
+
+.menu li:nth-child(2n) .content {
+	/* 3,6,9 */
+	right: 0;
+}
+
+.menu li:nth-child(5) .content .menu li:nth-child(4) .content,
+.menu li:nth-child(6) .content {
+	bottom: 0;
+}
+
+
+/* -------------------------------- */
+
+.menu .title {
+	position: absolute;
+	padding-top: 20px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	/*font: italic bold 1em/120px 'trebuchet MS', Arial, helvetica;*/
+	font-family: "微软雅黑";
+	font-size: 24pt;
+	opacity: 1;
+	/*color: orange;*/
+	color: white;
+}
+
+.menu li:hover .title {
+	opacity: 1;
+}
+
+
+/* -------------------------------- */
+
+.menu .close {
+	display: none;
+	border: 5px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	font: bold 20px/40px arial, helvetica;
+	position: absolute;
+	text-align: center;
+	top: -20px;
+	right: -20px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	/*border-radius: 40px;*/
+}
+
+.menu .cover .close {
+	display: block;
+}
+
+.navSubMenu {
+	margin-top: 4px;
+	height: 40px;
+	font-size: 18pt;
+	
+	text-align: center;
+}
+
+#contentContainer {
+	height: 600px;
+	border: none
+}

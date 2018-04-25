@@ -1,0 +1,236 @@
+/*地图显示区域*/
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 85%;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+#historyViewDiv {
+    padding: 0;
+    margin: 0;
+    height: 85%;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+#sceneDiv {
+    height: 85%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.panel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-side {
+    padding: 2px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    z-index: 60;
+    min-width: 300px;
+}
+
+.sm-panel-side {
+    padding: 2px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    z-index: 60;
+}
+
+#barcon {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 16px;
+}
+
+.panel-side h2 {
+    padding: 0 20px;
+    /*margin: 20px 0;*/
+    font-size: 24px;
+}
+
+.panel-side ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.panel-side li {
+    list-style: none;
+    padding: 6px;
+}
+
+.panel-side li i {
+    display: inline-block;
+    width: 77%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-style: normal
+}
+
+.panel-side .active {
+    color: yellow;
+}
+
+.panel-result {
+    cursor: pointer;
+    margin: 2px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.panel-result:hover,
+.panel-result:focus {
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.esri-popup__main-container {
+    background-color: rgba(255, 235, 59, 0.7)
+}
+
+.map_table {
+    color: white;
+    align-content: center;
+    border: 1px solid yellow
+}
+
+.map_table tr td {
+    border: 1px solid yellow;
+    font-color: white;
+    align-content: center;
+}
+.selectBox{
+    top: 2%;
+    left: 5%;
+    position: absolute;
+}
+.selectBox div{
+    float: left;
+    margin-left: 5px;
+}
+#selectLocationBox select{
+    width:138px;
+}
+
+#selectAreaBox select{
+    width:auto;
+}
+#selectReset{
+    width:auto;
+}
+#selectTypeBox {
+    top: 12%;
+    left: 36%;
+    position: absolute;
+}
+
+/*#selectArea {*/
+/*width: 100px;*/
+/*}*/
+
+/*#selectLocation {*/
+/*width: 100px;*/
+/*}*/
+
+#map_info_panel {
+    background: #969696;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20%;
+    height: 95%;
+    border-radius: 0;
+    display: none;
+}
+
+#map_info_panel #closed {
+    position: absolute;
+    display: block;
+    top: -10px;
+    right: -7px;
+}
+
+#map_info_panel #closed img {
+    width: 25px;
+    height: 25px;
+}
+
+#stat_desc {
+    height: 30%;
+    color: white;
+    font-size: 10pt;
+    padding: 10px;
+    overflow: auto;
+}
+#stat_datalist #projectGallery img{
+    width: 330px;
+    height: 250px;
+}
+.stat_label {
+    color: white;
+    font-size: 12pt;
+    align-content: center;
+}
+
+#stat_tablelist {
+    margin: 2%;
+    width: 96%;
+    line-height: 30px;
+    background: transparent;
+    text-align: center;
+    border: solid 1px yellow;
+    font-size: 10px;
+    color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+#stat_tablelist tr td {
+    border: solid 1px yellow;
+}
+
+#stat_chart {
+    padding-top: 10px;
+    background: transparent;
+    position: relative;
+    font-size: 10px;
+    color: white;
+    height: 200px;
+    width: 310px;
+    bottom: 10px;
+}
+
+#stat_charts {
+    position: relative;
+}
+
+#stat_charts #toggleChart {
+    position: absolute;
+    top: -5%;
+    right: 3%;
+}

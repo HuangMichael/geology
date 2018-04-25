@@ -1,0 +1,309 @@
+    html,
+    body {
+        margin: 0;
+        /*height: 70%;*/
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    p {
+
+        text-indent: 2em;
+        font-size: 16px;
+    }
+
+    #container {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        /*z-index: -1;*/
+        min-height: 800px
+    }
+    .layer{
+        z-index: 997;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        display: none;
+        background: rgba(0, 0, 0, 0.498039);
+    }
+
+    #bigPic{
+        width: 45%;
+        height: 58%;
+        margin-left: 32%;
+        margin-top: 10%;
+        border-radius: 10px;
+    }
+    #description {
+        position: absolute;
+        top: 12%;
+        right: 0;
+        bottom: 0;
+        width: 20%;
+        height: 100%;
+        font-size: 14pt;
+        font-family: "微软雅黑";
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: gainsboro;
+    }
+
+    #collapseDiv {
+        height: 50px;
+        width: 100px;
+        background-image: url(../img/collapse.png);
+        margin-top: 50%;
+        margin-right: 25%
+    }
+
+    #tip {
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+        position: absolute;
+        /*float:right;*/
+        font-size: 12px;
+        /*top: 4%;*/
+        /*margin-top: 11%;*/
+        right: 30%;
+        border-radius: 3px;
+        line-height: 36px;
+        width: auto;
+        text-align: center;
+        /*float: right;*/
+        z-index: 1
+
+    }
+
+    #tip strong {
+
+        color: orangered;
+    }
+
+    .button-group {
+        margin-top: 100px;
+        left: 10%;
+        position: absolute;
+        top: 15%;
+        left: 100px;
+        font-size: 12px;
+        padding: 10px;
+        width: 600px;
+        z-index: 1
+    }
+
+    .button-group .button {
+        height: 30px;
+        line-height: 30px;
+        background-color: #0D9BF2;
+        color: #FFF;
+        border: 0;
+        outline: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+        margin-bottom: 2px;
+        cursor: pointer;
+    }
+
+    .button-group .inputtext {
+        height: 26px;
+        line-height: 26px;
+        border: 1px;
+        outline: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    #weatherContainer {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        top: 280px;
+        width: 300px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+    }
+
+    #weatherListDiv {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        top: 290px;
+        width: 300px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+    }
+
+    #projectContainer {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        font-size: 12px;
+        margin-top: 50px;
+        width: 300px;
+        top: 10px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        line-height: 30px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+    }
+
+    #areaDetailDiv {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        top: 460px;
+        width: 300px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+    }
+
+    #projectDetailDiv {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        top: 460px;
+        width: 300px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+    }
+
+    #areaAnalysisDiv {
+        background-color: #fff;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        top: 790px;
+        width: 300px;
+        float: right;
+        right: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        border: 1px solid silver;
+        box-shadow: 3px 4px 3px 0px silver;
+    }
+
+    #legend {
+        background-color: #fff;
+        position: absolute;
+        font-size: 14px;
+        left: 2%;
+        width: auto;
+        bottom: 2%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        z-index: 2;
+        padding:10px;
+    }
+
+    #planLegend {
+        background-color: #fff;
+        position: absolute;
+        font-size: 12px;
+        left: 10px;
+        width: 180px;
+        bottom: 20px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+    }
+
+    .amap-info-content {
+        font-size: 12px;
+    }
+
+    #myPageTop {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ccc;
+        margin: 10px auto;
+        padding: 6px;
+        font-family: "Microsoft Yahei", "微软雅黑", "Pinghei";
+        font-size: 14px;
+    }
+
+    #myPageTop label {
+        margin: 0 20px 0 0;
+        color: #666666;
+        font-weight: normal;
+    }
+
+    #myPageTop input {
+        width: 170px;
+    }
+
+    #myPageTop .column2 {
+        padding-left: 25px;
+    }
+
+    table > td {
+        width: 100px;
+    }
+
+    #wkDesc >p {
+        font-family: "Consolas";
+        font-size: 16px;
+        color: #000;
+        text-indent: 2em;
+    }
+
+    #legendTable > td {
+        text-align: center;
+        width: 50%;
+    }
+
+
+
+
+
