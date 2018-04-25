@@ -32,11 +32,10 @@ $(function () {
                 searchPhrase: getSearchParams()
             };
         },
-        url: "archivesBorrowApply/data",
+        url: "archives/data",
         formatters: {
             "commands": function (column, row) {
-                return "<button class='btn-sm command-edit' title='编辑' onclick='edit(" + row.id + ")'><i class='icon-edit'></i></button>" +
-                    "<button class='btn-sm command-delete' title='删除' onclick='del(" + row.id + ")'><i class='icon-trash'></i></button>";
+                return "<button class='btn-sm command-edit' title='借阅' onclick='borrow(" + row.id + ")'><i class='icon-edit'></i></button>"
             }
         },
         converters: {
@@ -46,5 +45,17 @@ $(function () {
         }
     })
 });
+
+
+/**
+ *
+ * @param id
+ */
+function borrow(id) {
+
+
+    alert("借阅"+id);
+
+}
 
 

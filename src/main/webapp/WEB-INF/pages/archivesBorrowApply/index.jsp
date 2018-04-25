@@ -49,14 +49,14 @@
                                     <th data-column-id="id" data-width="5%" data-type="numeric" data-identifier="true">
                                         序号
                                     </th>
-                                    <th data-column-id="borrowNo" data-width="5%">借阅编号</th>
-                                    <th data-column-id="reason" data-width="20%">借阅原因</th>
+                                    <th data-column-id="archiveNo" data-width="5%">档案编号</th>
+                                    <th data-column-id="shortName" data-width="10%">档案简称</th>
+                                    <th data-column-id="name" data-width="20%">档案名称</th>
                                     <th data-column-id="createdBy" data-width="5%">创建人</th>
-                                    <th data-column-id="beginDate" data-width="10%">借阅开始时间</th>
-                                    <th data-column-id="endDate" data-width="10%">借阅结束时间</th>
+                                    <th data-column-id="createDate" data-width="5%">创建时间</th>
                                     <th data-column-id="status" data-width="6%" data-converter='showStatus'>状态</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false"
-                                        data-width="5%">编辑 删除
+                                        data-width="5%">借阅
                                     </th>
                                 </tr>
                                 </thead>
