@@ -3,15 +3,17 @@
  */
 
 dataTableName = "#dataTableList";
-docName = "围垦区块信息";
-mainObject = "vArea";
 deleteObject = "area";
-formName = "";
 appName = "围垦区块";
 formId = "#areaForm";
 selectArray = ["#id", "#city", "#district", "#functionType", "#areaType"];
 topValue = "18%";
 authStatus = "";
+
+
+docName = "档案借阅申请信息";
+mainObject = "archivesBorrowApply";
+formName = "#form";
 
 var currentId = null;
 var url = "";
@@ -43,7 +45,14 @@ $(function () {
                 to: showStatus
             }
         }
-    })
+    });
+
+
+    $("#saveBtn").trigger("click");
+
+
+    var validateConfigs = {};
+    validateForm.call(validateConfigs);
 });
 
 
@@ -52,9 +61,7 @@ $(function () {
  * @param id
  */
 function borrow(id) {
-
-
-    alert("借阅"+id);
+    $("#apply_modal").modal("show");
 
 }
 

@@ -101,6 +101,8 @@ function validateForm(validationConfig) {
         .bootstrapValidator(validationConfig)
         .on('success.form.bv', function (e) {
             e.preventDefault();
+
+            console.log("formName----------------" + formName);
             saveMainObject(formName);
         });
 }
@@ -897,7 +899,8 @@ function delResource(id, url) {
             showMessageBox("info", data["resultDesc"]);
         } else {
             showMessageBox("danger", data["resultDesc"]);
-        };
+        }
+        ;
     });
     setInterval(function () {
         location.reload(false);
@@ -918,7 +921,8 @@ function delAllFile_changeStatus(url, message) {
             temp += 1;
             str += cks[i].value + ",";
         }
-    };
+    }
+    ;
     if (temp == 0) {
         bootbox.alert({
             buttons: {
@@ -968,7 +972,8 @@ function delAllFile_changeStatus(url, message) {
                                 if (msg[i].result = true) {
                                     n += 1;
                                 }
-                            };
+                            }
+                            ;
                             // console.log(n+ "看看n和msg.length相等不想等" + msg.length);
                             if (n == msg.length || 1) {
                                 console.log("del msg-------------" + JSON.stringify(msg));
@@ -981,7 +986,8 @@ function delAllFile_changeStatus(url, message) {
                                 console.log("del msg-------------" + JSON.stringify(msg));
                                 showMessageBox("danger", "部分文件操作成功");
                                 showAllFile(mediaComplexSearch(media));
-                            };
+                            }
+                            ;
                         },
                         error: function (msg) {
                             console.log("del msg-------------" + JSON.stringify(msg));
@@ -1080,7 +1086,8 @@ function city_District() {
         for (var i = 0; i < district.length; i++) {
             var option = new Option(district[i], district[i]);
             $("#districtName").append(option);
-        };
+        }
+        ;
         $("#districtName").select2();
     });
 }
@@ -1121,7 +1128,7 @@ function cityAndDistrict() {
  *
  * 根据市县名称查询项目名称
  */
-function searchProjectNameBycityOrDistrict(cityOrDistrict,authStatus) {
+function searchProjectNameBycityOrDistrict(cityOrDistrict, authStatus) {
     $(cityOrDistrict).change(function () {
 
         //先清空项目名称下拉列表
@@ -1131,16 +1138,17 @@ function searchProjectNameBycityOrDistrict(cityOrDistrict,authStatus) {
         if (cityOrDistrict !== "") {
             var url = "project/findVByAuthKeyAndCityNameAndDistrictNameAndStatus";
             var data = {
-                cityName:cityName,
-                districtName:districtName,
-                authStatus:authStatus
+                cityName: cityName,
+                districtName: districtName,
+                authStatus: authStatus
             };
-            var res =  getMediaSelectedData(url, data, "projectName");
+            var res = getMediaSelectedData(url, data, "projectName");
             for (var i = 0; i < res.length; i++) {
                 console.log(res[i]);
                 var option = new Option(res[i]["text"], res[i]["text"]);
                 $("#project").append(option);
-            };
+            }
+            ;
             $("#project").select2();
         }
     });
@@ -1157,7 +1165,6 @@ function exportTemplate() {
         }
     })
 }
-
 
 
 /**
@@ -1249,8 +1256,6 @@ function getCheckedValues() {
     var result = selectedIds.length > 0 ? selectedIds.join(",") : "";
     return result;
 }
-
-
 
 
 /**

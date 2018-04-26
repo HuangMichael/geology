@@ -28,6 +28,8 @@
 <script src="/js/common/common-crud.js"></script>
 <script src="/js/common/common-utils.js"></script>
 <script src="/js/common/common-title.js"></script>
+<script type="text/javascript" src="/js/bootstrapvalidator/dist/js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="/js/bootstrapvalidator/src/js/language/zh_CN.js"></script>
 <script type="text/javascript" src="/js/select2-4.0.3/dist/js/select2.min.js"></script>
 <script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"> </script>
 

@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="css/page.css"/>
 <link rel="stylesheet" href="/js/bootgrid/jquery.bootgrid.css">
 <link rel="stylesheet" href="/js/select2-4.0.3/dist/css/select2.css">
+<link rel="stylesheet" type="text/css" href="/js/bootstrapvalidator/dist/css/bootstrapValidator.css"/>
 <link rel="stylesheet" href="/css/gis_map.css">
 <link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
 

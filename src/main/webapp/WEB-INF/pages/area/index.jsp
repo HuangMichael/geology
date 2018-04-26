@@ -27,7 +27,6 @@
 <div class="modal fade confirm_modal subfield" id="confirm_modal">
     <div class="modal-body">围垦区块</div>
     <form class="form-horizontal subfield" id="areaForm">
-
         <div class="row-fluid">
             <div class="form-group ">
                 <div class="pull-left">

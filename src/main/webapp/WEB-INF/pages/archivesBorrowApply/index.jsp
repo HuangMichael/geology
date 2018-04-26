@@ -71,6 +71,51 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade confirm_modal subfield" id="apply_modal">
+    <div class="modal-body">借阅申请</div>
+    <form class="form-horizontal subfield" id="form">
+        <div class="row-fluid">
+            <div class="form-group ">
+                <div class="pull-left">
+                    <label for="archives" class="col-md-2 control-label">档案名称：</label>
+                    <div class="col-md-3">
+                        <input  class="form-control" id="archives" name="archives" placeholder="档案名称">
+                        <div class="areaName_error"></div>
+                    </div>
+                </div>
+
+                <div class="pull-left">
+                    <label for="reason" class="col-md-2 control-label">借阅原因：</label>
+                    <div class="col-md-3">
+                        <input  class="form-control" id="reason" name="reason" placeholder="借阅原因" required>
+                        <div class="number_error"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <div class="pull-left">
+                    <label for="beginDate" class="col-md-2 control-label">开始日期：</label>
+                    <div class="col-md-3">
+                        <input class="form-control " id="beginDate" name="beginDate" placeholder="开始日期" required>
+                        <div class="number_error"></div>
+                    </div>
+                </div>
+                <div class="pull-left">
+                    <label for="endDate" class="col-md-2 control-label">结束日期：</label>
+                    <div class="col-md-3">
+                        <input  class="form-control " id="endDate" name="endDate" placeholder="结束日期" required>
+                        <div class="number_error"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal-footer">
+        <a class="btn btn-danger" data-action="1" id="saveBtn">申请</a>
+        <a class="btn cancel" href="#" data-dismiss="modal">取消</a>
+    </div>
+</div>
 <!-- ==================== END OF PAGE CONTENT ==================== -->
 <%@include file="../common/common-footer.jsp" %>
 <script type="text/javascript" src="/js/select2-4.0.3/dist/js/select2.min.js"></script>
